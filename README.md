@@ -19,11 +19,16 @@ Bu servis, barkodların otomatik olarak üretilmesi, veritabanına kaydedilmesi 
 
 ## 🔧 Kurulum ve Bağımlılıklar
 
+### Kullanılan Teknolojiler
+- **Backend:** ASP.NET Core, Dapper
+- **Frontend:** Vue.js (Vuetify ile)
+- **Veritabanı:** SQL Server
+
 ### Gereksinimler
 
-- [.NET 8 SDK]
-- Veritabanı:
-  - SQL Server (System.Data.SqlClient ile uyumlu)
+- **[.NET 8 SDK]**
+- **SQL Server (System.Data.SqlClient ile uyumlu)**
+- **Vue.js 3.5.8 veya üzeri**
 
 ---
 
@@ -176,5 +181,6 @@ Kullanıcı adı ve şifre ile giriş yapar, JWT token üretir.
 - JWT token (başarılı girişte)  
 - Başarısızsa hata mesajları.
 
----
+
+
 
