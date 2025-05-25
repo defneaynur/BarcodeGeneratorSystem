@@ -58,7 +58,5 @@ namespace BarcodeGeneratorSystem.Api.Services
                 Message = "ERP verileri başarıyla kaydedildi. Count= " + createData
             };
         }
-
-
     }
 }
