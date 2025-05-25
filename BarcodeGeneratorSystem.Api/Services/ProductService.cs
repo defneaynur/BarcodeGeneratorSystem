@@ -47,7 +47,7 @@ namespace BarcodeGeneratorSystem.Api.Services
                     Data = erpProducts.Data,
                     CoreResponseCode = CoreResponseCode.Success,
                     ErrorMessages = new List<string>(),
-                    Message = "Aktarılacak yeni veri yok "
+                    Message = "Aktarılacak yeni veri bulunamadı."
                 };
             }
             return new CoreResponse<IEnumerable<ErpProductResponse>>
@@ -55,7 +55,7 @@ namespace BarcodeGeneratorSystem.Api.Services
                 Data = erpProducts.Data,
                 CoreResponseCode = CoreResponseCode.Success,
                 ErrorMessages = new List<string>(),
-                Message = "ERP verileri başarıyla kaydedildi.Count= " + createData
+                Message = "ERP verileri başarıyla kaydedildi. Count= " + createData
             };
         }
 
