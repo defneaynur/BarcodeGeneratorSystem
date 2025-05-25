@@ -24,6 +24,14 @@ Bu servis, barkodların otomatik olarak üretilmesi, veritabanına kaydedilmesi 
 - **Frontend:** Vue.js (Vuetify ile)
 - **Veritabanı:** SQL Server
 
+
+#### 🗃 Veritabanı Kurulumu  
+Projeyle birlikte gelen `DatabaseScript.sql` dosyası, gerekli veritabanı ve tabloların oluşturulmasını sağlar.
+
+**Kurulum Adımları:**
+1. SQL Server Management Studio (SSMS) aracıyla `DatabaseScript.sql` dosyasını açın.  
+2. Scripti çalıştırarak `BarcodeSystem` isimli veritabanını ve tabloları oluşturun.
+
 ### Gereksinimler
 
 - **[.NET 8 SDK]**
