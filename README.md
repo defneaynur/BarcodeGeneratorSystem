@@ -17,6 +17,26 @@ Bu servis, barkodların otomatik olarak üretilmesi, veritabanına kaydedilmesi 
 
 ---
 
+## 🔧 Kurulum ve Bağımlılıklar
+
+### Gereksinimler
+
+- [.NET 8 SDK]
+- Veritabanı:
+  - SQL Server (System.Data.SqlClient ile uyumlu)
+
+---
+
+### 📦 Kullanılan Kişiselleştirilmiş NuGet Paketleri
+
+| Paket | Açıklama |
+|-------|----------|
+| `Moonlight.ExceptionHandling (1.0.0)` | Merkezileştirilmiş hata yönetimi(CoreException("Record Not Found")) |
+| `Moonlight.Response (1.0.0)` | Standart API yanıt yapısı (CoreResponse) |
+
+
+---
+
 ## API Endpoints
 
 ### Barcode Servisi
@@ -157,22 +177,4 @@ Kullanıcı adı ve şifre ile giriş yapar, JWT token üretir.
 - Başarısızsa hata mesajları.
 
 ---
-
-## 🔧 Kurulum ve Bağımlılıklar
-
-
-### Gereksinimler
-
-- [.NET 8 SDK]
-- Veritabanı:
-  - SQL Server (System.Data.SqlClient ile uyumlu)
-
----
-
-### 📦 Kullanılan Kişiselleştirilmiş NuGet Paketleri
-
-| Paket | Açıklama |
-|-------|----------|
-| `Moonlight.ExceptionHandling (1.0.0)` | Merkezileştirilmiş hata yönetimi(CoreException("Record Not Found")) |
-| `Moonlight.Response (1.0.0)` | Standart API yanıt yapısı (CoreResponse) |
 
