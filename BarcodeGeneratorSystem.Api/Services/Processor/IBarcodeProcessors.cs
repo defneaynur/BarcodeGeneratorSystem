@@ -2,6 +2,7 @@
 using BarcodeGeneratorSystem.Domain.Models.RequestModel;
 using BarcodeGeneratorSystem.Domain.Models.ResponseModel;
 using Dapper;
+using Moonlight.ExceptionHandling.Exceptions;
 using System.Data;
 
 namespace BarcodeGeneratorSystem.Api.Services.Processor
@@ -80,6 +81,8 @@ namespace BarcodeGeneratorSystem.Api.Services.Processor
             const string query = "SELECT * FROM Barcodes WHERE Id = @Id AND (IsDeleted IS NULL OR IsDeleted = 0)";
 
             var result = await _dbConnection.QuerySingleOrDefaultAsync<Barcodes>(query, new { Id = barcode.Id });
+            if (result == null)
+                throw new CoreException("Record Not Found");
 
             return result;
         }
