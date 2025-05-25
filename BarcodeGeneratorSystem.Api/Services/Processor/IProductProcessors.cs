@@ -11,7 +11,11 @@ namespace BarcodeGeneratorSystem.Api.Services.Processor
     public class ProductProcessors(IDbConnection _dbConnection) : IProductProcessors
     {
 
-
+        /// <summary>
+        /// Created product data from erp mock service
+        /// </summary>
+        /// <param name="products"></param>
+        /// <returns></returns>
         public async Task<int> ImportProductsAsync(IEnumerable<Product> products)
         {
             var existingSkus = await _dbConnection.QueryAsync<string>("SELECT Sku FROM Product WHERE Sku IN @Skus",

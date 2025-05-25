@@ -10,7 +10,10 @@ namespace BarcodeGeneratorSystem.Api.Services.Processor
 
     public class ErpProcessors(HttpClient _httpClient, ILogger<ErpProcessors> _logger) : IErpProcessors
     {
-
+        /// <summary>
+        /// Call Mock Erp Service for mock product data
+        /// </summary>
+        /// <returns></returns>
         public async Task<CoreResponse<IEnumerable<ErpProductResponse>>> GetErpProductsAsync()
         {
             int retryCount = 0;
