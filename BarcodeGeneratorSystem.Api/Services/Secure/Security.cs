@@ -35,7 +35,6 @@ namespace BarcodeGeneratorSystem.Api.Services.Secure
                 signingCredentials: creds
             );
 
-
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }

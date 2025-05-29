@@ -101,7 +101,5 @@ namespace BarcodeGeneratorSystem.Api.Services
 
         }
 
-
-
     }
 }

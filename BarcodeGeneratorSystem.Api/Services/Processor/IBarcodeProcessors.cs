@@ -149,9 +149,6 @@ namespace BarcodeGeneratorSystem.Api.Services.Processor
             bool isValid = actualCheckDigit == expectedCheckDigit;
             return isValid;
         }
-
-  
-
         #endregion
     }
 }

@@ -14,15 +14,8 @@ namespace BarcodeGeneratorSystem.Api.Services.Processor
         Task<IEnumerable<Users>> GetUsersAsync();
     }
 
-    public class UserProcessors : IUserProcessors
+    public class UserProcessors(IDbConnection _dbConnection) : IUserProcessors
     {
-        private readonly IDbConnection _dbConnection;
-
-        public UserProcessors(IDbConnection dbConnection)
-        {
-            _dbConnection = dbConnection;
-        }
-
         /// <summary>
         /// This method return Users
         /// </summary>
